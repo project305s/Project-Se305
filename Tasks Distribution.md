@@ -15,7 +15,7 @@ This document outlines the use case distribution among the team members for the 
 1.	**Mansoor Saleh**
   - Use Case: Register
   - Task: Develop the user registration feature to allow new users to create accounts.
-     
+    
 
 2.	**Mohammed Hamood**
   - Use Case: Payment
