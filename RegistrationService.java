@@ -1,4 +1,4 @@
-/**
+/*
  * RegistrationService.java
  * This class represents the business logic for user registration in an Online Library System.
  * It ensures proper validation and saves user data.
