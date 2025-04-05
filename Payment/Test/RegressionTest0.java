@@ -76,6 +76,7 @@ public class RegressionTest0 {
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
     }
 
+    
     @Test
     public void test005() throws Throwable {
         if (debug)
