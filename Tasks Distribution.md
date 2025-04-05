@@ -4,10 +4,10 @@ Project:  the Library Management System
 This document outlines the use case distribution among the team members for the Library Management System project.
 
 
-|    ID      | Team Member      | Use Cases                 |
-| -----------| -----------------| --------------------------|
-| 20196460   | Mansoor Saleh    |  Register                 |
-| 20174904   | Mohammed Hamood  |  Payment                  |
+|    ID      | Team Member      | Use Cases        | Section |
+| -----------| -----------------| -----------------|---------|
+| 20196460   | Mansoor Saleh    |  Register        |    2    | 
+| 20174904   | Mohammed Hamood  |  Payment         |    1    | 
 
 
 ## Team Members & Use Case Assignments
