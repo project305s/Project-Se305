@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.news-item h2 {
+    margin: 0;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.add-news-button {
+    padding: 12px 24px;
+    background-color: #004080;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.add-news-button:hover {
+    background-color: #064623;
+}
+
+
+.admin-panel table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-panel th, .admin-panel td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 2px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.delete {
+    background-color: #cc0000;
+}
+.news-thumb {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.news-item img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+td img.news-thumb {
+    display: inline-block;
+    vertical-align: middle;
+}
+
