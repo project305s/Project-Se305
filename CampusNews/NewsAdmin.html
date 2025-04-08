@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin News Panel</title>
+    <title>Manage News</title>
     <link rel="stylesheet" href="news.css">
 </head>
 <body>
     <header>
-        <h1>Admin - Manage News</h1>
+        <h1> Manage News</h1>
     </header>
     <main>
         <table>
@@ -24,7 +24,7 @@
                         <img src="news1.jpg" alt="News 1" class="news-thumb" />
                         First News Title
                     </td>
-                    <td>March 20, 2025</td>
+                    <td>May 20, 2025</td>
                     <td>
                         <button>Edit</button>
                         <button class="delete">Delete</button>
@@ -35,7 +35,7 @@
                         <img src="news2.jpg" alt="News 2" class="news-thumb" />
                         Second News Title
                     </td>
-                    <td>March 21, 2025</td>
+                    <td>March 18, 2025</td>
                     <td>
                         <button>Edit</button>
                         <button class="delete">Delete</button>
@@ -43,6 +43,31 @@
                 </tr>
             </tbody>
         </table>
+
+        <!-- Add News Form -->
+        <section class="add-news">
+            <h2>Add New News</h2>
+            <form>
+                <label for="news-date">Date:</label>
+                <input type="date" id="news-date" name="news-date" required>
+
+                <label for="news-title">Title:</label>
+                <input type="text" id="news-title" name="news-title" required>
+
+                <label for="news-description">Description:</label>
+                <textarea id="news-description" name="news-description" required></textarea>
+
+                <label for="news-image">Image:</label>
+                <input type="file" id="news-image" name="news-image" accept="image/*" required>
+
+                <button type="submit">Add News</button>
+            </form>
+        </section>
+
+        <!-- Back to Main Page Button -->
+        <div class="button-container">
+            <a href="MainNews.html" class="back-button">Back to Main Page</a>
+        </div>
     </main>
 </body>
 </html>
