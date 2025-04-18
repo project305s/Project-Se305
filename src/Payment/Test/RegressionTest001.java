@@ -5,4 +5,4 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({ RegressionTest0.class })
 public class RegressionTest001 {
 }
-
+ 
