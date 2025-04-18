@@ -17,9 +17,9 @@ public class RegressionTest0Unique {
             }
         }
     }
-    
 
-    @Test
+
+    @Test 
     public void test001() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest0.test001");
