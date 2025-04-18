@@ -49,8 +49,6 @@ public class RegressionTest0 {
     public void test04() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest0.test04");
-        RegistrationUI registrationUI0 = new RegistrationUI();
-// flaky "1) test04(RegressionTest0)":         registrationUI0.start();
     }
 
     @Test

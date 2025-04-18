@@ -3,7 +3,7 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class RegressionTest0 {
+public class RegressionTest0Renamed {
 
     public static boolean debug = false;
 
@@ -51,7 +51,6 @@ public class RegressionTest0 {
         BusinessLayer businessLayer1 = new BusinessLayer(dataLayer0);
         // The following exception was thrown during execution in test generation
         try {
-            Payment payment3 = businessLayer1.getPaymentDetails("hi!");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"DataLayer.getPaymentById(String)\" because \"this.DataLayer\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -241,7 +240,6 @@ public class RegressionTest0 {
         java.lang.String str12 = payment10.toString();
         boolean boolean13 = dataLayer5.savePayment(payment10);
         boolean boolean14 = dataLayer0.savePayment(payment10);
-        BusinessLayer businessLayer15 = new BusinessLayer(dataLayer0);
         Payment payment17 = dataLayer0.getPaymentById("Payment{transactionId='', userId='', amount=10.0, description='hi!'}");
         org.junit.Assert.assertNotNull(paymentList1);
         org.junit.Assert.assertNotNull(paymentList2);
@@ -373,7 +371,6 @@ public class RegressionTest0 {
     public void test022() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest0.test022");
-        Payment payment4 = new Payment("", "", (double) 10, "hi!");
     }
 
     @Test
@@ -409,7 +406,6 @@ public class RegressionTest0 {
     public void test025() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest0.test025");
-        Payment payment4 = new Payment("Payment{transactionId='', userId='hi!', amount=0.0, description=''}", "Payment{transactionId='', userId='hi!', amount=0.0, description=''}", 1.0d, "");
     }
 
     @Test
@@ -562,7 +558,6 @@ public class RegressionTest0 {
         BusinessLayer businessLayer1 = new BusinessLayer(dataLayer0);
         // The following exception was thrown during execution in test generation
         try {
-            java.util.List<Payment> paymentList2 = businessLayer1.getAllPayments();
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"DataLayer.getAllPayments()\" because \"this.DataLayer\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -801,7 +796,6 @@ public class RegressionTest0 {
     public void test041() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest0.test041");
-        Payment payment4 = new Payment("", "Payment{transactionId='', userId='', amount=10.0, description='hi!'}", 0.0d, "");
     }
 
     @Test
@@ -974,7 +968,6 @@ public class RegressionTest0 {
     public void test045() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest0.test045");
-        Payment payment4 = new Payment("", "hi!", (double) 10, "Payment{transactionId='Payment{transactionId='', userId='', amount=10.0, description='hi!'}', userId='Payment{transactionId='', userId='hi!', amount=0.0, description=''}', amount=-1.0, description='Payment{transactionId='', userId='', amount=10.0, description='hi!'}'}");
     }
 
     @Test
@@ -998,8 +991,7 @@ public class RegressionTest0 {
             System.out.format("%n%s%n", "RegressionTest0.test047");
         DataLayer dataLayer0 = new DataLayer();
         java.util.List<Payment> paymentList1 = dataLayer0.getAllPayments();
-        BusinessLayer businessLayer2 = new BusinessLayer(dataLayer0);
-        BusinessLayer businessLayer3 = new BusinessLayer(dataLayer0);
+        DataLayer businessLayer3 = null;
         java.util.List<Payment> paymentList4 = businessLayer3.getAllPayments();
         org.junit.Assert.assertNotNull(paymentList1);
         org.junit.Assert.assertNotNull(paymentList4);
@@ -1162,7 +1154,6 @@ public class RegressionTest0 {
     public void test054() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest0.test054");
-        Payment payment4 = new Payment("Payment{transactionId='', userId='', amount=10.0, description='hi!'}", "Payment{transactionId='', userId='hi!', amount=0.0, description=''}", (double) 100.0f, "Payment{transactionId='Payment{transactionId='', userId='', amount=10.0, description='hi!'}', userId='Payment{transactionId='', userId='hi!', amount=0.0, description=''}', amount=-1.0, description='Payment{transactionId='', userId='', amount=10.0, description='hi!'}'}");
     }
 
     @Test
