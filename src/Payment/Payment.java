@@ -14,7 +14,7 @@ public class Payment {
         this.userId = userId;
         this.amount = amount;
         this.description = description;
-    }
+    }  
 
     public String getTransactionId() {
         return transactionId;

@@ -25,5 +25,3 @@ jobs:
 
     - name: Run JUnit tests
       run: java -jar lib/junit-platform-console-standalone-1.13.0-M2.jar -cp src --scan-classpath
-
-      
