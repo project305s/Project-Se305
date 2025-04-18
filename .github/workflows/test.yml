@@ -1,7 +1,11 @@
 name: Run JUnit Tests
 
 on:
-  pull_request:
+    push:
+      branches:
+        - main
+    pull_request:
+  
 
 jobs:
   test:
