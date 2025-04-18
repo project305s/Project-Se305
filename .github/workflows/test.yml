@@ -1,11 +1,10 @@
 name: Run JUnit Tests
 
 on:
-    push:
-      branches:
-        - main
-    pull_request:
-  
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   test:
@@ -21,13 +20,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Cache Maven dependencies
-      uses: actions/cache@v3
-      with:
-        path: ~/.m2
-        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-        restore-keys: |
-          ${{ runner.os }}-maven-
+    - name: Compile Java files
+      run: javac -cp lib/junit-platform-console-standalone-1.13.0-M2.jar $(find src -name "*.java")
 
-    - name: Build and test with Maven
-      run: mvn clean test
+    - name: Run JUnit tests
+      run: java -jar lib/junit-platform-console-standalone-1.13.0-M2.jar -cp src --scan-classpath
