@@ -9,7 +9,7 @@ public class BusinessLayer {
 
     public BusinessLayer(DataLayer DataLayer) {
         this.DataLayer = DataLayer;
-    }
+    } 
 
     public void processPayment(Payment payment) {
         if (DataLayer.savePayment(payment)) {
