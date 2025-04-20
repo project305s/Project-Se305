@@ -8,7 +8,7 @@ public class BusinessLayer {
     private final DataLayer DataLayer;
 
     public BusinessLayer(DataLayer DataLayer) {
-        this.DataLayer = DataLayer
+        this.DataLayer = DataLayer 
     }
 
     public void processPayment(Payment payment) {
