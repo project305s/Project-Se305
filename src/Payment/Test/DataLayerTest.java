@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DataLayerTest {
 
-    private DataLayer dataLayer
+    private DataLayer dataLayer;
 
     @BeforeEach
     public void setUp() {
