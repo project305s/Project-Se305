@@ -1,35 +1,44 @@
-/*
- * UserData.java
- * This class represents the data layer for user registration in an Online Library System.
- * It stores user details and provides methods for retrieving them.
- */
-
 import java.util.HashMap;
 import java.util.Map;
- 
+
 public class UserData {
-    // Simulated database using a HashMap (userId -> User Object)
+    // Simulated database using a HashMap (userId -> User Info)
     private Map<String, String> registeredUsers = new HashMap<>();
 
-    /*
+    /**
      * Saves user registration details.
-     *
-     * @param userId   Unique identifier for the user.
-     * @param userInfo User details (e.g., name, email).
+     * Prevents overwriting an existing user and validates input data.
+     * @return True if registration is successful, false otherwise.
      */
-    public void saveUser(String userId, String userInfo) {
+    public boolean saveUser(String userId, String userInfo) {
+        if (userId == null || userId.isEmpty() || userInfo == null || userInfo.isEmpty()) {
+            System.out.println("Invalid user details. Registration failed.");
+            return false;
+        }
+
+        if (registeredUsers.containsKey(userId)) {
+            System.out.println("User already exists. Registration failed.");
+            return false;
+        }
+
         registeredUsers.put(userId, userInfo);
         System.out.println("User registered successfully: " + userId);
+        return true;
     }
 
-    
-    /*
+    /**
      * Retrieves user details by ID.
-     *
+     * Returns a message if user is not found.
+     * 
      * @param userId Unique identifier for the user.
-     * @return User information or null if not found.
+     * @return User information or a message if not found.
      */
     public String getUser(String userId) {
-        return registeredUsers.get(userId);
+        if (userId == null || userId.isEmpty()) {
+            return "Invalid user ID.";
+        }
+
+       return registeredUsers.getOrDefault(userId, "User not found.");
+
     }
 }

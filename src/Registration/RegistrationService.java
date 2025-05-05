@@ -4,7 +4,7 @@
  * It ensures proper validation and saves user data.
  */
 
-public class RegistrationService {
+ public class RegistrationService {
     private UserData userData;
 
     // Constructor
