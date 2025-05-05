@@ -16,7 +16,7 @@ public class Payment {
         this.description = description;
     }
 
-    public String getTransactionId() {
+    private String getTransactionId() {
         return transactionId;
     }
 
