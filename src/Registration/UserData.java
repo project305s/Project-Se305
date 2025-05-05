@@ -37,7 +37,7 @@ public class UserData {
         if (userId == null || userId.isEmpty()) {
             return "Invalid user ID.";
         }
-
+else
        return registeredUsers.getOrDefault(userId, "User not found.");
 
     }
