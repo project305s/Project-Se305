@@ -2,13 +2,13 @@
 
 /**
  * Model class representing a payment in the Online Library System.
- */
+ */ 
 public class Payment {
     private final String transactionId;
     private final String userId;
     private final double amount;
     private final String description;
-
+ 
     private Payment(String transactionId, String userId, double amount, String description) {
         this.transactionId = transactionId;
         this.userId = userId;
@@ -32,7 +32,7 @@ public class Payment {
         return description;
     }
 
-    @Override
+    
 public String toString() {
     return String.format("Payment{transactionId='%s', userId='%s', amount=%.2f, description='%s'}",
             transactionId, userId, amount, description);
