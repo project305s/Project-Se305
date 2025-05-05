@@ -34,16 +34,15 @@ public class UserData {
      * @return User information or a message if not found.
      */
     public String getUser(String userId) {
-          */
-    public String getUser(String userId) {
         if (userId == null || userId.isEmpty()) {
-            return "Invalid user ID provided.";
+            return "Invalid user ID.";
         }
 
-        return registeredUsers.getOrDefault(userId, "User not found.");
-    }
-}
+        if (registeredUsers.containsKey(userId)) {
+            return registeredUsers.get(userId);
+        }
 
+        return "User not found.";
     }
 }
 
