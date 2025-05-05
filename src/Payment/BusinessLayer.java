@@ -11,7 +11,7 @@ public class BusinessLayer {
         this.DataLayer = DataLayer;  
     } 
 
-    private void processPayment(Payment payment) {
+    void processPayment(Payment payment) {
         if (DataLayer.savePayment(payment)) {
             System.out.println("Payment processed successfully: " + payment.getTransactionId());
         } else {
