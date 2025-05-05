@@ -38,10 +38,7 @@ public class UserData {
             return "Invalid user ID.";
         }
 
-        if (registeredUsers.containsKey(userId)) {
-            return registeredUsers.get(userId);
-        }
+       return registeredUsers.getOrDefault(userId, "User not found.");
 
-        return "User not found.";
     }
 }
