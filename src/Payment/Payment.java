@@ -4,12 +4,12 @@
  * Model class representing a payment in the Online Library System.
  */ 
 public class Payment {
-    private final String transactionId;
-    private final String userId;
-    private final double amount;
-    private final String description;
+    public final String transactionId;
+    public final String userId;
+    public final double amount;
+    public final String description;
  
-    private Payment(String transactionId, String userId, double amount, String description) {
+    public Payment(String transactionId, String userId, double amount, String description) {
         this.transactionId = transactionId;
         this.userId = userId;
         this.amount = amount;
