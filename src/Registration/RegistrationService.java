@@ -26,6 +26,7 @@ public class RegistrationService {
             return false;
         }
 
+        
         String userInfo = "Name: " + userName + ", Email: " + email;
         userData.saveUser(userId, userInfo);
         System.out.println("User registration completed: " + userId);
