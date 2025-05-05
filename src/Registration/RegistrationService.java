@@ -25,7 +25,10 @@ public class RegistrationService {
             System.out.println("Invalid user details. Registration failed.");
             return false;
         }
-
+        if (userData.getUser(userId) != null) {
+        System.out.println("User already exists. Registration failed.");
+        return false;
+    }
         String userInfo = "Name: " + userName + ", Email: " + email;
         userData.saveUser(userId, userInfo);
         System.out.println("User registration completed: " + userId);
