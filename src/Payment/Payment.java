@@ -1,3 +1,4 @@
+
 // Payment.java 
 /** 
  * Model class representing a payment in the Online Library System.
@@ -31,11 +32,8 @@ public class Payment {
         return description;
     }
 
-    
-@Override
-public String toString() {
-    return String.format("Payment{transactionId='%s', userId='%s', amount=%.2f, description='%s'}",
-            transactionId, userId, amount, description);
-}
-    
+public String toString() {  
+        return "Payment{transactionId='" + transactionId + "', userId='" + userId +  
+                "', amount=" + amount + ", description='" + description + "'}";
+}  
 }
